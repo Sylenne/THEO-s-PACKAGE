@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ <title>Particle.js Tutorial</title>
+
+ <style types="text/css">
+ body{
+ background-color: #001489;
+ }
+
+section.particles-js .overlay {
+    pointer-events: all;
+}
+body,
+html {
+    height: 100%
+}
+@font-face{
+        font-family: kabond;
+        src: "assets/KABOND.otf";
+      }
+p{
+	font-family: kabond;
+	font-size: 2em;
+	color: #FFFF;
+	text-shadow: 0 0 10px #FFFF;
+
+}
+ </style>
+ <style>
+      .container {
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .container-loaded {
+        opacity: 1;
+      }
+    </style>
+        <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body class="container">
+	<div id="particles-js" style="width: 100%; position: fixed;">
+	</div>
+
+	    <div>
+	    	<img src="assets/player4.png" style="position: absolute; width: 26%; margin:5%; margin-top:2%">
+	    </div>
+	    <div style="position: absolute; display: flex; flex-direction: row; margin-top: 7%; margin-left: 33%; width: 100%">
+	    	<p style="margin-left: 11%">
+	    		Discover what you are!
+	    	</p>
+	    	<p style="margin-left: 29%;">
+	    		And what you can do!
+	    	</p>
+	    </div>
+		<div style="position: absolute; display: flex; flex-direction: row; align-items: center; margin: 12%">
+			<video autoplay loop muted style="    width: 20%; margin-right: 10%;">
+				<source src="assets/Franci
+				.mp4" type="video/mp4">
+			</video>
+			<video controls autoplay loop muted style="width: 60%">
+				<source autoplay src="assets/theo.mp4" type="video/mp4" >
+			</video>
+			<div style=" margin-left: 10%; margin-left: -37%;">
+			<a href="https://www.kidsout.org.uk/"><img src="assets/KidsOut.png" style="width: 120%; height: auto; margin-right: 17%; margin-left: 97%;"></a>
+			
+		    </div>
+		    <div style="position: absolute;margin-top: 55%;width: 22%;">
+		    	<a href="">
+		    	<img src="assets/StartA.png" style="width: 100%;">
+		        </a>
+		    </div>
+		</div>
+			<script>
+      $(document).ready(function() {
+    // Let's simulate some loading time.
+    
+    setTimeout(function() {
+        $('.container').addClass('container-loaded');
+    }, 1500);
+});
+    </script>
+
+		
+	
+
+
+	<script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
