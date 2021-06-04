@@ -20,19 +20,21 @@ html {
         font-family: kabond;
         src: "assets/KABOND.ttf";
       }
-  @font-face{
+	   @font-face{
         font-family: eurostile;
         src: "assets/Eurostile.ttf";
       }
 p{
 	font-family: lucida sans unicode, arial;
-	font-size: 2em;
+	font-size: 4vh;
 	color: #FFFF;
 	text-shadow: 0 0 10px #FFFF;
 
 }
+
+
  </style>
- <style>
+  <style>
       .container {
         opacity: 0;
         transition: opacity 1s;
@@ -42,41 +44,54 @@ p{
         opacity: 1;
       }
     </style>
-        <script src="jquery-3.5.1.min.js"></script>
+     <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body class="container">
 	<div id="particles-js" style="width: 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0;">
 	</div>
 
-	    <div>
-	    	<img src="assets/PLayer4.png" style="position: absolute; width: 26%; margin:5%; margin-top:2%">
-	    </div>
-	    <div style="position: absolute; display: flex; flex-direction: row; margin-top: 7%; margin-left: 33%; width: 100%">
-	    	<p style="margin-left: 11%">
-	    		Discover which energy you are!
-	    	</p>
-	    	<p style="margin-left: 29%;">
-	    		And what you can do!
-	    	</p>
-	    </div>
-		<div style="position: absolute; display: flex; flex-direction: row; align-items: center; margin: 12%">
-			<video autoplay loop muted style="    width: 20%; margin-right: 10%;">
-				<source src="assets/Franci.mp4" type="video/mp4">
-			</video>
-			<video autoplay loop muted style="width: 60%">
-				<source autoplay src="assets/theo.mp4" type="video/mp4" >
-			</video>
-			<div style=" margin-left: 10%; margin-left: -37%;">
-			<a href="https://www.kidsout.org.uk/"><img src="assets/KidsOut.png" style="width: 120%; height: auto; margin-right: 17%; margin-left: 125%;"></a>
-			
-		    </div>
-		    <div style="position: absolute;margin-top: 55%;width: 22%;">
+	    <div style="display: flex; align-content: space-around; flex-direction: column; justify-content: space-between; width: 100%; height: 100%; position: fixed;">
+	    	<img src="assets/player4.png" style=" width: 40vh; margin:5vw; margin-top: 0vh">
+	    	  <div style="margin-top: 2vh;width: 250px; margin-left: 5vw; margin-bottom: 2vh;">
 		    	<a href="https://sylenne.github.io/EXPLORATIONPAGE/">
-		    	<img src="assets/again.png" style="width: 100%;">
+		    	<img src="assets/again2.png" style="width: 100%;">
 		        </a>
 		    </div>
+	    </div>
+	    <div style=" display: flex; align-items: center; flex-direction: row; height: 100vh;">
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+	
+
+	    <div style="position: relative; display: flex; flex-direction: column; margin-left: 6vw; width: 100%: height: 100%;">
+	    
+	    	<video autoplay loop muted style="width: 40vh; margin-right: 10vw;">
+				<source src="assets/Franci.mp4" type="video/mp4">
+			</video>
+	    	
+	    </div>
+		<div style="position: relative; display: flex; flex-direction: column; align-items: center;  width: 90vw; margin-bottom: 12vh;">
+		<p>
+	    		Discover which energy you are!
+	    	</p>
+			
+			<video autoplay loop muted style="width:100%;">
+				<source autoplay src="assets/theo.mp4" type="video/mp4" >
+			</video>
 		</div>
-			<script>
+			
+
+ <div style=" width: 100%; display: flex; flex-direction: column; margin-left: -15vw; align-items: center; ">
+ 	<p style="margin-left: 0vw;">
+	    		And what you can do!
+	    	</p>
+			<a href="https://www.kidsout.org.uk/" style="width: 50%"><img src="assets/KidsOut.png" style="width: 50vw; height: auto; margin-right: 10vw; position: relative;"></a>
+			
+		    </div>
+		    </div>
+	
+		</div>
+
+				<script>
       $(document).ready(function() {
     // Let's simulate some loading time.
     
@@ -84,13 +99,9 @@ p{
         $('.container').addClass('container-loaded');
     }, 1500);
 });
-    </script>
-
-		
-	
-
-
+    </script>s
 	<script type="text/javascript" src="particles.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
+
